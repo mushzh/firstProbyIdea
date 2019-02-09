@@ -1,6 +1,6 @@
 package leetcode;
 
-public class ImplementStrStrNo28 {
+class ImplementStrStrNo28 {
     public int strStr(String haystack, String needle) {
         if (needle == null || "".equals(needle)) {
             return 0;
@@ -13,7 +13,7 @@ public class ImplementStrStrNo28 {
         return -1;
     }
 
-    public int strStrOK(String haystack, String needle) {
+    int strStrOK(String haystack, String needle) {
         for (int i = 0; ; i++) {
             for (int j = 0; ; j++) {
                 if (j == needle.length()) return i;
