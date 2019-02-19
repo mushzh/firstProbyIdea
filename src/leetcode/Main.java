@@ -5,9 +5,13 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         System.out.println("IntelliJ IDEA enjoy it!");
-        no1();
-        no15();
-        no28to29();
+        long startTime = System.currentTimeMillis();
+//        no1();
+//        no15();
+//        no28to29();
+        no11();
+        long endTime = System.currentTimeMillis();
+        System.out.println((endTime - startTime) + "ms");
     }
 
     private static void no28to29() {
@@ -20,6 +24,14 @@ public class Main {
         System.out.println(solu2.divide(7, -3));
         System.out.println(solu2.divide(-1, -1));
         System.out.println(solu2.divide(-2147483648, -1));
+    }
+
+    private static void no11() {
+
+        MaxAreaNo11 solu = new MaxAreaNo11();
+        int[] height = {1,8,6,2,5,4,8,3,7};
+        System.out.println(solu.maxArea(height));
+
     }
 
     private static void no15() {
