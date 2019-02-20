@@ -9,9 +9,22 @@ public class Main {
 //        no1();
 //        no15();
 //        no28to29();
-        no11();
+        no6();
+//        no11();
         long endTime = System.currentTimeMillis();
         System.out.println((endTime - startTime) + "ms");
+    }
+
+    private static void no6() {
+
+        ZigZagConversionNo6 solu = new ZigZagConversionNo6();
+        // PAHNAPLSIIGYIR
+        String a = solu.convert("PAYPALISHIRING", 3);
+        System.out.println(a + "   run:" + "PAHNAPLSIIGYIR".equals(a));
+        // PINALSIGYAHRPI
+        a = solu.convert("PAYPALISHIRING", 4);
+        System.out.println(a + "   run:" + "PINALSIGYAHRPI".equals(a));
+
     }
 
     private static void no28to29() {
@@ -29,7 +42,7 @@ public class Main {
     private static void no11() {
 
         MaxAreaNo11 solu = new MaxAreaNo11();
-        int[] height = {1,8,6,2,5,4,8,3,7};
+        int[] height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
         System.out.println(solu.maxArea(height));
 
     }
