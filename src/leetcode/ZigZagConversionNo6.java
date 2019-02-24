@@ -50,6 +50,53 @@ public class ZigZagConversionNo6 {
         }
         return result.toString();
     }
+//    public String convert(String s, int numRows) {
+//        if ("".equals(s)) {
+//            return "";
+//        }
+//        if(numRows==0||numRows==1){
+//            return s;
+//        }
+//        char[] totalChars = s.toCharArray();
+//        int length = totalChars.length;
+//        /*每列加后面的弯弯算做一个chunk，一个chunk包含chunkNums个char*/
+//        int chunkNums = numRows * 2 - 2;
+//        /*一共有多少个chunk*/
+//        int chunks = length / chunkNums + 1;
+//        StringBuilder sb = new StringBuilder();
+//        for (int j = 0; j < numRows; j++) {
+//            if (j == 0) {
+//                /*第一种情况：*/
+//                for (int i = 0; i < chunks; i++) {
+//                    int index = i * chunkNums;
+//                    if (index < length) {
+//                        sb.append(totalChars[index]);
+//                    }
+//                }
+//            } else if (j == numRows - 1) {
+//                /*这两种情况只有一个*/
+//                for (int i = 0; i < chunks; i++) {
+//                    int index = i * chunkNums + (numRows - 1);
+//                    if (index < length) {
+//                        sb.append(totalChars[index]);
+//                    }
+//                }
+//            } else {
+//                /*否则有两个*/
+//                for (int i = 0; i < chunks; i++) {
+//                    int firstIndex = i * chunkNums + j;
+//                    int secondIndex = i * chunkNums + (chunkNums - j);
+//                    if (firstIndex < length) {
+//                        sb.append(totalChars[firstIndex]);
+//                    }
+//                    if (secondIndex < length) {
+//                        sb.append(totalChars[secondIndex]);
+//                    }
+//                }
+//            }
+//        }
+//        return sb.toString();
+//    }
 
 //    public String convert(String s, int numRows) {
 //
