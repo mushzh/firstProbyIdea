@@ -9,7 +9,8 @@ public class Main {
 //        no1();
 //        no15();
 //        no28to29();
-        no6();
+//        no6();
+        no13();
 //        no11();
         long endTime = System.currentTimeMillis();
         System.out.println((endTime - startTime) + "ms");
@@ -25,6 +26,14 @@ public class Main {
         a = solu.convert("PAYPALISHIRING", 4);
         System.out.println(a + "   run:" + "PINALSIGYAHRPI".equals(a));
 
+    }
+    private static void no13() {
+        RomanToIntNo13 solu = new RomanToIntNo13();
+        System.out.println(solu.romanToInt("III") == 3);
+        System.out.println(solu.romanToInt("IV") == 4);
+        System.out.println(solu.romanToInt("IX") == 9);
+        System.out.println(solu.romanToInt("LVIII") == 58);
+        System.out.println(solu.romanToInt("MCMXCIV") == 1994);
     }
 
     private static void no28to29() {
