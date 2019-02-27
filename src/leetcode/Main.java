@@ -10,12 +10,21 @@ public class Main {
 //        no15();
 //        no28to29();
 //        no6();
-        no13();
+        no3();
+//        no13();
 //        no11();
         long endTime = System.currentTimeMillis();
         System.out.println((endTime - startTime) + "ms");
     }
 
+    private static void no3() {
+        LengthOfLongestSubstringNo3 solu = new LengthOfLongestSubstringNo3();
+        System.out.println(solu.lengthOfLongestSubstring("abcabcbb") == 3);
+        System.out.println(solu.lengthOfLongestSubstring("bbbbb") == 1);
+        System.out.println(solu.lengthOfLongestSubstring("pwwkew") == 3);
+        System.out.println(solu.lengthOfLongestSubstring("abcd") == 4);
+        System.out.println(solu.lengthOfLongestSubstring("dvdf") == 3);
+    }
     private static void no6() {
 
         ZigZagConversionNo6 solu = new ZigZagConversionNo6();
