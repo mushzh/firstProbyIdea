@@ -6,11 +6,12 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("IntelliJ IDEA enjoy it!");
         long startTime = System.currentTimeMillis();
+        no12();
 //        no1();
 //        no15();
 //        no28to29();
 //        no6();
-        no3();
+//        no3();
 //        no13();
 //        no11();
         long endTime = System.currentTimeMillis();
@@ -36,6 +37,20 @@ public class Main {
         System.out.println(a + "   run:" + "PINALSIGYAHRPI".equals(a));
 
     }
+    private static void no12() {
+        IntToRomanNo12 solu = new IntToRomanNo12();
+        // "III"
+        System.out.println(solu.intToRoman(3));
+        // "IV"
+        System.out.println(solu.intToRoman(4));
+        // "IX"
+        System.out.println(solu.intToRoman(9));
+        // "LVIII"
+        System.out.println(solu.intToRoman(58));
+        // "MCMXCIV"
+        System.out.println(solu.intToRoman(1994));
+    }
+
     private static void no13() {
         RomanToIntNo13 solu = new RomanToIntNo13();
         System.out.println(solu.romanToInt("III") == 3);

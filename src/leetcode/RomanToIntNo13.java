@@ -2,7 +2,7 @@ package leetcode;
 
 public class RomanToIntNo13 {
     /**
-     * 罗马数字包含以下七种字符: I， V， X， L，C，D 和 M。     *
+     * 罗马数字包含以下七种字符: I， V， X， L，C，D 和 M。
      * 字符          数值
      * I             1
      * V             5
@@ -65,6 +65,7 @@ public class RomanToIntNo13 {
             case "IV" :
                 ret = 4;
                 break;
+            default:
         }
         return ret;
     }
@@ -101,6 +102,7 @@ public class RomanToIntNo13 {
             case "I" :
                 ret = 1;
                 break;
+            default:
         }
         return ret;
     }
