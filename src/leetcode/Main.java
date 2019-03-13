@@ -6,7 +6,8 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("IntelliJ IDEA enjoy it!");
         long startTime = System.currentTimeMillis();
-        no12();
+//        no12();
+        no26();
 //        no1();
 //        no15();
 //        no28to29();
@@ -49,6 +50,33 @@ public class Main {
         System.out.println(solu.intToRoman(58));
         // "MCMXCIV"
         System.out.println(solu.intToRoman(1994));
+    }
+    private static void no26() {
+        RemoveDuplicatesNo26 solu = new RemoveDuplicatesNo26();
+        int[] nums = {1, 1, 2};
+        // 2
+        System.out.println(solu.removeDuplicates(nums));
+        // 1 2 ...
+        for (int i = 0; i < nums.length; i++) {
+            System.out.print(nums[i]);
+        }
+        System.out.println("");
+        int[] nums2 = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+        // 5
+        System.out.println(solu.removeDuplicates2(nums2));
+        // 0 1 2 3 4 ...
+        for (int j = 0; j < nums2.length; j++) {
+            System.out.print(nums2[j]);
+        }
+        System.out.println("");
+        int[] nums3 = {1, 1};
+        // 1
+        System.out.println(solu.removeDuplicates(nums3));
+        // 1 1
+        for (int i = 0; i < nums3.length; i++) {
+            System.out.print(nums3[i]);
+        }
+        System.out.println("");
     }
 
     private static void no13() {
