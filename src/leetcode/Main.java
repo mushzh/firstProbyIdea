@@ -7,7 +7,7 @@ public class Main {
         System.out.println("IntelliJ IDEA enjoy it!");
         long startTime = System.currentTimeMillis();
 //        no12();
-        no26();
+//        no26();
 //        no1();
 //        no15();
 //        no28to29();
@@ -15,6 +15,7 @@ public class Main {
 //        no3();
 //        no13();
 //        no11();
+        no38();
         long endTime = System.currentTimeMillis();
         System.out.println((endTime - startTime) + "ms");
     }
@@ -98,6 +99,15 @@ public class Main {
         System.out.println(solu2.divide(7, -3));
         System.out.println(solu2.divide(-1, -1));
         System.out.println(solu2.divide(-2147483648, -1));
+    }
+
+    private static void no38() {
+
+        CountAndSayNo38 solu = new CountAndSayNo38();
+        // "1"
+        System.out.println(solu.countAndSay(1));
+        // "1211"
+        System.out.println(solu.countAndSay(4));
     }
 
     private static void no11() {
