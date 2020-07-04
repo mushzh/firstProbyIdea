@@ -1,11 +1,15 @@
 package leetcode;
 
+import test.OutputStreamTest;
+
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("IntelliJ IDEA enjoy it!");
         long startTime = System.currentTimeMillis();
+        OutputStreamTest outputStreamInfo = new OutputStreamTest();
+        outputStreamInfo.outputTest();
 //        no12();
 //        no26();
 //        no1();
@@ -15,7 +19,7 @@ public class Main {
 //        no3();
 //        no13();
 //        no11();
-        no38();
+//        no38();
         long endTime = System.currentTimeMillis();
         System.out.println((endTime - startTime) + "ms");
     }
