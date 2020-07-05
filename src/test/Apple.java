@@ -26,7 +26,8 @@ public class Apple {
         Constructor appleConstructor = clz.getConstructor();
         Object appleObj = appleConstructor.newInstance();
         setPriceMethod.invoke(appleObj, 14);
-        Method getPriceMethod = clz.getMethod("getPrice");
+        String setMemo = "getPrice";
+        Method getPriceMethod = clz.getMethod(setMemo);
         System.out.println("Apple Price:" + getPriceMethod.invoke(appleObj));
     }
 }
